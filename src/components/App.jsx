@@ -2,7 +2,14 @@ import { Profile } from 'components/Profile/Profile';
 import user from '../user.json';
 export const App = () => {
   return (
-    <div>
+    <div
+      style={{
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+      }}
+    >
       <Profile
         username={user.username}
         tag={user.tag}
